@@ -1,0 +1,56 @@
+
+
+Libtext is stable, but under a beta release waiting to get user
+feedback on possible improvements before the API is set in stone.
+So don't depend on the current API being unchanged until a non-beta
+package has been released. At this point please submit suggestions
+on API improvements, possible additional features, or additional
+convenience macros ( especially for t_newdef ).
+
+You must have glibc 2.1 or a C99 compliant library, or parts of
+Libtext will not function properly. If someone could explain how
+to check for this in configure.in, it would be greatly appreciated.
+At least how to check for glibc >= 2.1.
+
+See text.h in the text directory for the complete documentation.
+
+Libtext: What does it do?
+==========================
+
+- Creates, deletes, and performs operations on growable text / string
+  buffer objects
+
+- Insert, delete, append, prepend, find, and replace operations
+  for strings and chars, optionally at specified positions
+
+- Insert, delete, append, and prepend operations for printf
+  style formats, optionally at specified positions
+
+- Optionally execute a callback function on a predefined set of errors,
+  either globally for all text objects, or execute specific callbacks
+  for each individual text object
+
+	- Errors for which callback is called if used:
+
+		- Attempting to add a binary char
+
+			- Binary chars are optionally not accepted by library
+
+		- Memory allocation error
+
+		- Exceeding optional setting of maximum length
+
+			- Library will not add any chars over max length if set
+
+		- Text searched for not found
+
+	- Regardless of whether the callback system is used or not, a global
+	  variable t_error will be set to a value indicating the error, or 0
+	  if none
+
+- And also performs many other actions on the text objects, see text/text.h for
+  complete documentation
+
+
+Copyright (c) 2015
+

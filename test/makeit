@@ -1,0 +1,4 @@
+#!/bin/sh
+
+libtool gcc -g -I../ -L../text/ -ltext $1.c -o $1
+

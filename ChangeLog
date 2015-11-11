@@ -1,0 +1,57 @@
+2002-04-01 09:22  omega
+
+	* test/: Makefile.am, Makefile.in: Changed Makefile.am so that test
+	binaries were not installed.
+
+2002-04-01 09:12  omega
+
+	* test/Makefile.am, test/Makefile.in, text/Makefile.in: Forgot to
+	add these files when created.
+
+2002-04-01 08:13  omega
+
+	* text/: Makefile.am, text.c, text.h: Added documentation to
+	text.h.
+
+2002-04-01 08:12  omega
+
+	* AUTHORS, Makefile.am, Makefile.in, README, TODO, config.status,
+	configure, configure.in, libtool, test/makeit, test/repsn.c,
+	test/tstfnd.c: Initial version of README.  Updated Makefile.am to
+	include test dir.  Updated configure.in to create test/Makefile.
+
+2002-03-20 03:21  omega
+
+	* text/: text.c, text.h: Wrote new __t_writefmt__. Now detects
+	binary chars.
+
+2002-03-20 03:19  omega
+
+	* test/: makeit, tstfnd.c: Temporarily added the makeit script in
+	the test dir.
+
+2002-03-20 03:18  omega
+
+	* Makefile.in, config.status, libtool: Added Makefile.in to
+	repository. This was forgotten on the first import.
+
+2002-03-12 21:54  omega
+
+	* AUTHORS, COPYING, ChangeLog, INSTALL, Makefile.am, NEWS, README,
+	THANKS, acinclude.m4, aclocal.m4, bootstrap, config.status,
+	configure, configure.in, configure.scan, libtool,
+	config/config.guess, config/config.sub, config/install-sh,
+	config/ltmain.sh, config/missing, config/mkinstalldirs,
+	test/reps.c, test/repsn.c, test/tstfnd.c, text/Makefile.am,
+	text/text.c, text/text.h: Initial revision
+
+2002-03-12 21:54  omega
+
+	* AUTHORS, COPYING, ChangeLog, INSTALL, Makefile.am, NEWS, README,
+	THANKS, acinclude.m4, aclocal.m4, bootstrap, config.status,
+	configure, configure.in, configure.scan, libtool,
+	config/config.guess, config/config.sub, config/install-sh,
+	config/ltmain.sh, config/missing, config/mkinstalldirs,
+	test/reps.c, test/repsn.c, test/tstfnd.c, text/Makefile.am,
+	text/text.c, text/text.h: Initial import.
+
